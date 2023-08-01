@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Loja dos doces</title>
+        <link
+            rel="stylesheet"
+            href="./lib/cdn.jsdelivr.net_npm_bootstrap@5.3.1_dist_css_bootstrap.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lemon&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./main.css" />
+    </head>
+    <body>
+        <header class="navbar navbar-expand-lg sticky-top p-4 cabecalho">
+            <div class="container">
+                <h1 class="navbar-brand m-0 fs-1 font-text">
+                    LOJA <span class="font-color"> DOS </span> DOCES
+                    <i class="bi bi-palette ms-3 font-color"></i>
+                </h1>
+                <button
+                    class="navbar-toggler"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menu-navegacao"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav
+                    class="navbar-collapse collapse justify-content-end"
+                    id="menu-navegacao"
+                >
+                    <ul class="nav nav-pills d-block d-md-flex">
+                        <li class="nav-item fw-bold">
+                            <a
+                                href="#sobre-a-loja"
+                                class="nav-link active font-text"
+                            >
+                                <i class="bi bi-house-door me-1"></i>
+                                Sobre a loja</a
+                            >
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a href="#mais-vendidos" class="nav-link font-text"
+                                ><i class="bi bi-calendar-check me-1"></i>Mais
+                                vendidos</a
+                            >
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a href="#cardapio" class="nav-link font-text"
+                                ><i class="bi bi-card-text me-1"></i>Cardápido
+                                de doces</a
+                            >
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a href="#fale-conosco" class="nav-link font-text"
+                                ><i class="bi bi-chat-left-text me-1"></i>Fale
+                                conosco</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div
+            data-bs-spy="scroll"
+            data-bs-target="cabecalho"
+            data-bs-smooth-scroll="true"
+        >
+            <section id="sobre-a-loja">
+                <div
+                    class="carousel slide"
+                    data-bs-ride="carousel"
+                    id="carousel"
+                >
+                    <div class="carousel-inner">
+                        <div
+                            class="carousel-item active"
+                            data-bs-interval="3000"
+                        >
+                            <img src="./images/slides/slide1.jpg" alt="" />
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="./images/slides/slide2.jpg" alt="" />
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="./images/slides/slide3.jpg" alt="" />
+                        </div>
+                    </div>
+                    <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carousel"
+                        data-bs-slide="prev"
+                    >
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carousel"
+                        data-bs-slide="next"
+                    >
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button
+                            type="button"
+                            data-bs-target="#carousel"
+                            data-bs-slide-to="0"
+                            class="active"
+                        ></button>
+                        <button
+                            type="button"
+                            data-bs-target="#carousel"
+                            data-bs-slide-to="1"
+                        ></button>
+                        <button
+                            type="button"
+                            data-bs-target="#carousel"
+                            data-bs-slide-to="2"
+                        ></button>
+                    </div>
+                </div>
+                <div class="pt-5 pb-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <img
+                                    src="./images/loja.jpg"
+                                    class="d-block w-100 rounded"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="col-md-7 mt-3 mt-md-0">
+                                <h2 class="font-text">
+                                    Sobre a <span class="font-color">loja</span>
+                                </h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Non eius ex commodi id
+                                    doloremque. Ut numquam sit, ratione labore
+                                    fugit inventore fuga tempora quod cumque
+                                    provident nam error! Quis, voluptatum.
+                                </p>
+                                <h3 class="font-text">
+                                    Sobre o
+                                    <span class="font-color">espaço</span>
+                                </h3>
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing elit. Corporis quaerat quidem
+                                    ratione saepe iusto, ipsa sint, sequi itaque
+                                    eaque dolorem, quis vero laborum excepturi
+                                    cum. Corrupti voluptate obcaecati adipisci
+                                    quo?
+                                </p>
+                                <ul>
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="mais-vendidos" class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="text-center font-text">
+                            Mais <span class="font-color">vendidos</span>
+                        </h2>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-4">
+                            <img
+                                src="./images/mais-vendidos/maisVendido1.jpg"
+                                alt=""
+                                class="d-block w-100 rounded mb-2"
+                            />
+                            <h3 class="fs-4 font-text">
+                                <i class="bi bi-bag-heart me-2"></i>
+                                M&M's
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Tempore odio, nostrum culpa
+                                vitae corrupti distinctio.
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <img
+                                src="./images/mais-vendidos/maisVendido2.jpg"
+                                alt=""
+                                class="d-block w-100 rounded mb-2"
+                            />
+                            <h3 class="fs-4 font-text">
+                                <i class="bi bi-bag-heart me-2"></i>
+                                Macarons
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Tempore odio, nostrum culpa
+                                vitae corrupti distinctio.
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <img
+                                src="./images/mais-vendidos/maisVendido3.jpg"
+                                alt=""
+                                class="d-block w-100 rounded mb-2"
+                            />
+
+                            <h3 class="fs-4 font-text">
+                                <i class="bi bi-bag-heart me-2"></i>
+                                Cookies
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Tempore odio, nostrum culpa
+                                vitae corrupti distinctio.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="cardapio" class="pt-5 pb-5">
+                <div class="container cabecalho">
+                    <div class="row">
+                        <h2 class="text-center mb-5 font-text">
+                            Nosso <span class="font-color">cardápio</span>
+                        </h2>
+                    </div>
+
+                    <div class="row">
+                        <aside class="col-md-2">
+                            <nav class="nav nav-pills flex-column nav-cardapio">
+                                <button
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#cupcakes"
+                                    type="button"
+                                    class="fw-bold text-start active nav-link font-text"
+                                >
+                                    Cupcakes
+                                </button>
+                                <button
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#balas"
+                                    type="button"
+                                    class="fw-bold text-start nav-link font-text"
+                                >
+                                    Balas
+                                </button>
+                                <button
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#chocolates"
+                                    type="button"
+                                    class="fw-bold text-start nav-link font-text"
+                                >
+                                    Chocolates
+                                </button>
+                                <button
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#bolos"
+                                    type="button"
+                                    class="fw-bold text-start nav-link font-text"
+                                >
+                                    Bolos
+                                </button>
+                            </nav>
+                        </aside>
+                        <div class="col-md-10">
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="cupcakes">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img
+                                                class="d-block w-100"
+                                                src="./images/cardapio/cupcakes/cupcake1.jpg"
+                                                alt=""
+                                            />
+                                            <h5 class="fw-bold mt-2 font-text">
+                                                Cupcake 1
+                                            </h5>
+                                            <p>
+                                                Lorem ipsum dolor sit amet
+                                                consectetur, adipisicing elit.
+                                                Quo, deserunt!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img
+                                                class="d-block w-100"
+                                                src="./images/cardapio/cupcakes/cupcake2.jpg"
+                                                alt=""
+                                            />
+                                            <h5 class="fw-bold mt-2 font-text">
+                                                Cupcake 2
+                                            </h5>
+                                            <p>
+                                                Lorem ipsum dolor sit amet
+                                                consectetur, adipisicing elit.
+                                                Quo, deserunt!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img
+                                                class="d-block w-100"
+                                                src="./images/cardapio/cupcakes/cupcake3.jpg"
+                                                alt=""
+                                            />
+                                            <h5 class="fw-bold mt-2 font-text">
+                                                Cupcake 3
+                                            </h5>
+                                            <p>
+                                                Lorem ipsum dolor sit amet
+                                                consectetur, adipisicing elit.
+                                                Quo, deserunt!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img
+                                                class="d-block w-100"
+                                                src="./images/cardapio/cupcakes/cupcake4.jpg"
+                                                alt=""
+                                            />
+                                            <h5 class="fw-bold mt-2 font-text">
+                                                Cupcake 4
+                                            </h5>
+                                            <p>
+                                                Lorem ipsum dolor sit amet
+                                                consectetur, adipisicing elit.
+                                                Quo, deserunt!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img
+                                                class="d-block w-100"
+                                                src="./images/cardapio/cupcakes/cupcake5.jpg"
+                                                alt=""
+                                            />
+                                            <h5 class="fw-bold mt-2 font-text">
+                                                Cupcake 5
+                                            </h5>
+                                            <p>
+                                                Lorem ipsum dolor sit amet
+                                                consectetur, adipisicing elit.
+                                                Quo, deserunt!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="balas">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img
+                                                class="d-block w-100"
+                                                src="./images/cardapio/balas/bala1.jpg"
+                                                alt=""
+                                            />
+                                            <h5 class="fw-bold mt-2 font-text">
+                                                Bala 1
+                                            </h5>
+                                            <p>
+                                                Lorem ipsum dolor sit amet
+                                                consectetur, adipisicing elit.
+                                                Quo, deserunt!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img
+                                                class="d-block w-100"
+                                                src="./images/cardapio/balas/bala2.jpg"
+                                                alt=""
+                                            />
+                                            <h5 class="fw-bold mt-2 font-text">
+                                                Bala 2
+                                            </h5>
+                                            <p>
+                                                Lorem ipsum dolor sit amet
+                                                consectetur, adipisicing elit.
+                                                Quo, deserunt!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img
+                                                class="d-block w-100"
+                                                src="./images/cardapio/balas/bala3.jpg"
+                                                alt=""
+                                            />
+                                            <h5 class="fw-bold mt-2 font-text">
+                                                Bala 3
+                                            </h5>
+                                            <p>
+                                                Lorem ipsum dolor sit amet
+                                                consectetur, adipisicing elit.
+                                                Quo, deserunt!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="chocolates">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img
+                                                class="d-block w-100"
+                                                src="./images/cardapio/chocolates/chocolate1.jpg"
+                                                alt=""
+                                            />
+                                            <h5 class="fw-bold mt-2 font-text">
+                                                Chocolate 1
+                                            </h5>
+                                            <p>
+                                                Lorem ipsum dolor sit amet
+                                                consectetur, adipisicing elit.
+                                                Quo, deserunt!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img
+                                                class="d-block w-100"
+                                                src="./images/cardapio/chocolates/chocolate2.jpg"
+                                                alt=""
+                                            />
+                                            <h5 class="fw-bold mt-2 font-text">
+                                                Chocolate 2
+                                            </h5>
+                                            <p>
+                                                Lorem ipsum dolor sit amet
+                                                consectetur, adipisicing elit.
+                                                Quo, deserunt!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img
+                                                class="d-block w-100"
+                                                src="./images/cardapio/chocolates/chocolate3.jpg"
+                                                alt=""
+                                            />
+                                            <h5 class="fw-bold mt-2 font-text">
+                                                Chocolate 3
+                                            </h5>
+                                            <p>
+                                                Lorem ipsum dolor sit amet
+                                                consectetur, adipisicing elit.
+                                                Quo, deserunt!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img
+                                                class="d-block w-100"
+                                                src="./images/cardapio/chocolates/chocolate4.jpg"
+                                                alt=""
+                                            />
+                                            <h5 class="fw-bold mt-2 font-text">
+                                                Chocolate 4
+                                            </h5>
+                                            <p>
+                                                Lorem ipsum dolor sit amet
+                                                consectetur, adipisicing elit.
+                                                Quo, deserunt!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="bolos">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img
+                                                class="d-block w-100"
+                                                src="./images/cardapio/bolos/bolo1.jpg"
+                                                alt=""
+                                            />
+                                            <h5 class="fw-bold mt-2 font-text">
+                                                Bolo 1
+                                            </h5>
+                                            <p>
+                                                Lorem ipsum dolor sit amet
+                                                consectetur, adipisicing elit.
+                                                Quo, deserunt!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img
+                                                class="d-block w-100"
+                                                src="./images/cardapio/bolos/bolo2.jpg"
+                                                alt=""
+                                            />
+                                            <h5 class="fw-bold mt-2 font-text">
+                                                Bolo 2
+                                            </h5>
+                                            <p>
+                                                Lorem ipsum dolor sit amet
+                                                consectetur, adipisicing elit.
+                                                Quo, deserunt!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img
+                                                class="d-block w-100"
+                                                src="./images/cardapio/bolos/bolo3.jpg"
+                                                alt=""
+                                            />
+                                            <h5 class="fw-bold mt-2 font-text">
+                                                Bolo 3
+                                            </h5>
+                                            <p>
+                                                Lorem ipsum dolor sit amet
+                                                consectetur, adipisicing elit.
+                                                Quo, deserunt!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="fale-conosco" class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="text-center font-text">
+                            Fale <span class="font-color">conosco</span>
+                        </h2>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-md-7 mb-5">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="nome" class="form-label fw-bold"
+                                        >Seu Nome</label
+                                    >
+                                    <input
+                                        type="text"
+                                        id="nome"
+                                        class="form-control"
+                                        required
+                                    />
+                                </div>
+                                <div class="mb-3">
+                                    <label
+                                        for="email"
+                                        class="form-label fw-bold"
+                                        >Seu e-mail</label
+                                    >
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        class="form-control"
+                                        required
+                                    />
+                                </div>
+                                <div class="mb-3">
+                                    <label
+                                        for="telefone"
+                                        class="form-label fw-bold"
+                                        >Seu telefone (opcional)</label
+                                    >
+                                    <input
+                                        type="tel"
+                                        id="telefone"
+                                        class="form-control"
+                                    />
+                                </div>
+                                <div class="mb-3">
+                                    <label
+                                        for="mensagem"
+                                        class="form-label fw-bold"
+                                        >Sua mensagem</label
+                                    >
+                                    <textarea
+                                        name="mensagem"
+                                        id="mensagem"
+                                        class="form-control"
+                                        required
+                                    ></textarea>
+                                </div>
+
+                                <button type="submit" class="fw-bold">
+                                    Enviar
+                                </button>
+                            </form>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="row">
+                                <h3 class="fs-4">
+                                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                                    Redes sociais
+                                </h3>
+                                <ul class="social-links">
+                                    <li class="fs-1">
+                                        <a href="#">
+                                            <i class="bi bi-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="fs-1 ms-1 me-1">
+                                        <a href="#">
+                                            <i class="bi bi-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li class="fs-1">
+                                        <a href="#">
+                                            <i class="bi bi-whatsapp"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="row mt-4">
+                                <h3 class="fs-4">
+                                    <i class="bi bi-cursor-fill"></i>
+                                    Endereço
+                                </h3>
+
+                                <p>
+                                    Rua teste Exemplo n 145, Bairro bootstrap -
+                                    Minas Gerais - Belo Horizonte
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script src="./lib/cdn.jsdelivr.net_npm_bootstrap@5.3.1_dist_js_bootstrap.bundle.min.js"></script>
+    </body>
+</html>

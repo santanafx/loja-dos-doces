@@ -1,0 +1,83 @@
+.navbar {
+    background-color: #ac9ef7;
+}
+
+.font-text {
+    font-family: "Lemon", cursive;
+}
+
+.font-color {
+    color: rgb(246, 96, 96);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.cabecalho .nav .nav-link.active {
+    background-color: white;
+    color: rgb(246, 96, 96);
+}
+
+.cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-cardapio .nav-link.active:hover {
+    color: black;
+}
+
+.navbar-toggler {
+    background-color: white;
+}
+
+#sobre-a-loja,
+#cardapio {
+    background-color: #e8fcf1;
+}
+
+#sobre-a-loja img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 500px;
+    min-height: 500px;
+}
+
+#cardapio img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 175px;
+    min-height: 175px;
+}
+
+.nav-cardapio .nav-link.active,
+#fale-conosco button {
+    background-color: rgb(246, 96, 96);
+    color: white;
+}
+.nav-cardapio .nav-link:hover {
+    color: rgb(246, 96, 96);
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
+#fale-conosco i {
+    background-color: white;
+    color: rgb(246, 96, 96);
+}
+
+#fale-conosco button {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 280px;
+    }
+}
